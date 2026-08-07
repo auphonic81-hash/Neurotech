@@ -109,6 +109,8 @@
       linear-gradient(90deg, rgba(79,110,247,0.05) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, black, transparent);
+    pointer-events: none;
+    z-index: 0;
   }
 
   .hero-glow {
@@ -120,7 +122,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 0;
   }
+
+  .hero h1, .hero-sub, .hero-actions, .hero-badge, .stats { position: relative; z-index: 1; }
 
   .hero-badge {
     display: inline-flex;
